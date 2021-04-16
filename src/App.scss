@@ -6,7 +6,6 @@ $white-color: #ffffff;
   text-align: center;
 
   .App-logo {
-    height: 40vmin;
     pointer-events: none;
   }
   
@@ -18,25 +17,23 @@ $white-color: #ffffff;
   
   .App-header {
     background-color: $black-color;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: $white-color;
+    padding: 25px 0;
   }
-  
-  .App-link {
-    color: $blue-color;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      border-bottom: 1px dashed #e1e1e1;
+      padding: 8px;
+    }
   }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }  
 }
