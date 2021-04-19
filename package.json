@@ -1,5 +1,6 @@
 {
-  "name": "rif-id-manager",
+  "name": "metamask-rsk-custom-network",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "scripts": {

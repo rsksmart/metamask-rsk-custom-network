@@ -80,6 +80,11 @@ function App () {
         Add Testnet and Mainnet RSK to Metamask.
       </header>
 
+      <section>
+        <h2>step 1</h2>
+        Download Metamask.
+      </section>
+
       {chainId && (
         <section>
           <h2>Current Network</h2>
@@ -111,6 +116,9 @@ function App () {
           {log.map((item: string, i: number) => <li key={i}>{item}</li>)}
         </ul>
       </section>
+
+      <hr />
+      <a href="https://github.com/rsksmart/metamask-rsk-custom-network">Github code</a>
     </div>
   )
 }
