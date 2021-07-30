@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
 import './App.scss'
+import {
+  Container
+} from 'react-bootstrap'
+import MainComponent from './app/components/MainComponent'
+import FooterComponent from './app/components/FooterComponent'
 
 declare const window: any
 
@@ -75,51 +80,12 @@ function App () {
     })
 
   return (
-    <div className="App">
-      <header className="App-header">
-        Add Testnet and Mainnet RSK to Metamask.
-      </header>
-
-      <section>
-        <h2>step 1</h2>
-        Download Metamask.
-      </section>
-
-      {chainId && (
-        <section>
-          <h2>Current Network</h2>
-          <p><strong>ChainId</strong> {chainId}</p>
-          <p><strong>Name</strong> {networkName}</p>
-        </section>
-      )}
-
-      <section>
-        <h2>Step 2:</h2>
-        <p>Click the buttons here to add the Mainnet or Testnet, or change to that network if you already have them configured!</p>
-
-        <button onClick={addRskMainnet}>Add RSK Mainnet</button>
-        <button onClick={addRskTestnet}>Add RSK Testnet</button>
-      </section>
-
-      {chainId && (
-        <section>
-          <h2>Step 3:</h2>
-          <p>Add the RIF token!</p>
-          <p>Click below to add the <strong>{networkName}</strong> RIF token.</p>
-          <button onClick={chainId === 30 ? addRifToken : addTestnetRifToken}>Add RIF Token</button>
-        </section>
-      )}
-
-      <section>
-        <h2>log</h2>
-        <ul>
-          {log.map((item: string, i: number) => <li key={i}>{item}</li>)}
-        </ul>
-      </section>
-
-      <hr />
-      <a href="https://github.com/rsksmart/metamask-rsk-custom-network">Github code</a>
-    </div>
+    <Container>
+      <div className="App">
+        <MainComponent/>
+        <FooterComponent/>
+      </div>
+    </Container>
   )
 }
 

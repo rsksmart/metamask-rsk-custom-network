@@ -3,7 +3,7 @@ $blue-color: #61dafb;
 $white-color: #ffffff;
 
 .App {
-  text-align: center;
+  background: #FFFFFF;
 
   .App-logo {
     pointer-events: none;
@@ -15,15 +15,209 @@ $white-color: #ffffff;
     }
   }
   
-  .App-header {
-    background-color: $black-color;
+  .App-header {    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 62px;
+    /* identical to box height */
+    
+    color: #008FF7;    
+  }
+
+  .rskLogo {
+    height: 75px;
+    margin-bottom: 3%;
+  }
+
+  .bulletRight {
+    text-align: right;
+  }
+
+  .marginNextStep {
+    margin-bottom: 5%;
+  }
+
+  .bullet1 {
+    font-size: 16px;
+    text-align: center;
+    color: #008FF7;
+    
+    border: 1px solid #008FF7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 10%;
+  }
+
+  .bullet2 {
+    font-size: 16px;
+    text-align: center;
+    color: #008FF7;
+    
+    border: 1px solid #008FF7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 10%;
+  }
+
+  .bullet3 {
+    font-size: 16px;
+    text-align: center;
+    color: #008FF7;
+    
+    border: 1px solid #008FF7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 10%;
+  }
+
+  .bullet4 {
+    font-size: 16px;
+    text-align: center;
+    color: #008FF7;
+    
+    border: 1px solid #008FF7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 10%;
+  }
+
+  .buttonDownloadMeta {
+    font-size: 16px;
+    text-align: center;
+    color: #008FF7;
+    
+    border: 1px solid #008FF7;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+  }
+
+  .buttonConnect {
+    font-size: 16px;
+    text-align: center;
+    color: #008FF7;
+    
+    border: 1px solid #008FF7;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+  }
+
+  .button {
+    text-align: center;
+    color: #008FF7;
+    
+    border: 1px solid #008FF7;
+    width: 45%;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding: 1% 10% 1% 10% ;
+    margin: 2% 0% 0% 10%;
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+
+  .button:hover {
+    background-color: #008FF7;
+    font-weight: 400;
+    color: white;
+    box-shadow: 5px 5px 2px grey;
+  }
+
+  .buttonAddToken {
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #008FF7;
+    
+    border: 1px solid #008FF7;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding: 1% 10% 1% 10% ;
+    margin: 5% 5% 5% 5%;
+    opacity: 0.9;
+    transition: 0.4s;
+  }
+
+  .buttonAddToken:hover {
+    background-color: #008FF7;
+    font-weight: 400;
+    color: white;
+    box-shadow: 5px 5px 2px grey;
+  }
+
+  .buttonAddRIF {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #008FF7;
+    
+    border: 1px solid #008FF7;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding: 1% 10% 1% 10% ;
+  }
+
+  .buttonAddDOC {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #008FF7;
+    
+    border: 1px solid #008FF7;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding: 1% 10% 1% 10%;
+  }
+  
+
+  .mainImage {
+    border-radius: 50%;
+
+    background: url(./app/img/bitcoinHand.png);
+  }
+
+  .mainImageCircle {
+    border-radius: 50%;
+    
+    background: #188FFC;
+  }
+
+  .toolExplanation {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+    margin-bottom: 5%;
+  }
+
+  .step {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: $white-color;
-    padding: 25px 0;
+    
+    color: #000000;
   }
 
   ul {
@@ -36,4 +230,68 @@ $white-color: #ffffff;
       padding: 8px;
     }
   }
+
+  footer {
+    .footer-top {
+      background-color: hsl(0, 0%, 90%);
+      padding: 50px 0;
+      margin-top: 8%;
+  
+      text-align: center;
+  
+      img {
+        height: 75px;
+      }
+  
+      h2 {
+        font-size: 22px;
+        font-weight: 500 !important;
+        color:black;
+        text-transform: capitalize;
+      }
+  
+      ul {
+        margin: 1em 0 0 0;
+        padding: 0;
+  
+        li {
+          list-style-type:none;
+          text-transform: capitalize;
+  
+          a {
+            color: #919191;
+          }
+        }
+      }
+  
+      p {
+        padding: 50px 0;
+      }
+    }
+  }
+  
+  footer::before {
+    content: '';
+    width: 100%;
+    height: 200px;
+    background: url('./app/img/gray-arch.svg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: relative;
+    top: 125px;
+  }
+  
+  // mobile styles
+  @media (max-width: 767.98px) {
+    footer {
+      margin-top: -75px;
+  
+      .footer-top {
+        padding-top: 0 !important;
+      }
+    }
+  }
+  
 }
